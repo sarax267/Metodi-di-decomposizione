@@ -1,0 +1,872 @@
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+48842 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+48842 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+48842 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
+
+Matrice X salvata in Dati_Breast_Cancer di risultati.xlsx
+
+Matrice X salvata in Dati_Diabetes di risultati.xlsx
+
+Matrice X salvata in Dati_Digits di risultati.xlsx
+
+Matrice X salvata in Dati_Iris di risultati.xlsx
+
+Matrice X salvata in Dati_Wine di risultati.xlsx
+
+Matrice X salvata in Dati_Fetch di risultati.xlsx
+
+Matrice X salvata in Dati_Adult di risultati.xlsx
+Il dataset usato è Breast cancer di Sklearn e considera:
+569 campoioni
+30 features
+ ogni campione ha una label =-1 se maligno =1 se benigno
+
+Il dataset usato è Diabetes di Sklearn e considera:
+442 campoioni
+10 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è Digits di Sklearn e considera:
+1797 campoioni
+64 features
+ ogni campione ha una label =-1 se pari =1 se dispari
+
+Il dataset usato è Iris di Sklearn e considera:
+150 campoioni
+4 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+Il dataset usato è Wine di Sklearn e considera:
+178 campoioni
+13 features
+ ogni campione ha una label =-1 se appartenete alle categorie A e B =1 se appartenete alla categoria C
+
+
+Il dataset usato è fetch di Sklearn e considera:
+1772 campoioni
+1000 features
+ ogni campione ha una label =-1 se inferiore a una certa soglia =1 se superiore
+
+Il dataset usato è adult di Sklearn e considera:
+500 campoioni
+105 features
+ ogni campione ha una label =-1 se inferiore a 50k =1 se superiore a 50k
+
