@@ -61,7 +61,7 @@ if __name__ == "__main__":
         '''Dataset 7: Adult'''
         name_dataset_7="Adult" # persone in america che guadagnano > o < 50k
         # Caricamento e preprocessing
-        adult=fetch_openml(name='adult', version=2, as_frame=True)
+        adult=fetch_openml(data_id=1590,  as_frame=True)
         X_adult,y_adult,Campioni_adult,Caratteristiche_adult,data_adult= estrai_dati(name_dataset_7,adult)
 
         

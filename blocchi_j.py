@@ -5,7 +5,7 @@ from gradient import compute_grad
 
 
 
-def blocchi_j(X, y, w, start_idx, end_idx, lambda_reg, max_iter, tol):
+def blocchi_j(X, y, w, start_idx, end_idx, lambda_reg, max_iter, tol,max_iter_in_block):
     
     #print(f"Dimensioni X: {X.shape[0]} righe e {X.shape[1]} colonne")
     #print(f"Dimensioni y: {y.shape[0]} righe")
@@ -35,7 +35,7 @@ def blocchi_j(X, y, w, start_idx, end_idx, lambda_reg, max_iter, tol):
 
     method_Armijo = ArmijoLineSearch()
     
-    for iter_num in range(max_iter):
+    for iter_num in range(max_iter_in_block):
         
         # Definisco la funzione di loss per questo blocco specifico
         def block_loss(w_new):
@@ -62,10 +62,6 @@ def blocchi_j(X, y, w, start_idx, end_idx, lambda_reg, max_iter, tol):
         w_block = w_block + alpha * direction
         z_block = X_block @ w_block  # Ricalcolo z_block con il nuovo w_block
         
-        
-        #print(f"w_new: {w_block}, step_size: {alpha}")
-
-        
     w_tot=w.copy()
     # Aggiorna il vettore w con i nuovi pesi del blocco
     w_tot[start_idx:(end_idx+1)] = w_block
@@ -77,4 +73,4 @@ def blocchi_j(X, y, w, start_idx, end_idx, lambda_reg, max_iter, tol):
     grad_norm_tot = np.linalg.norm(grad_tot)
     loss_tot = compute_loss(X, y, w_tot, z_total, 0, 0, lambda_reg)
 
-    return loss_tot, grad_tot, grad_norm_tot, w_tot,iter_num
+    return loss_tot, grad_tot, grad_norm_tot, w_block,iter_num
