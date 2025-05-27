@@ -64,13 +64,10 @@ def blocchi_j(X, y, w, start_idx, end_idx, lambda_reg, max_iter, tol,max_iter_in
         
     w_tot=w.copy()
     # Aggiorna il vettore w con i nuovi pesi del blocco
-    w_tot[start_idx:(end_idx+1)] = w_block
+    
     #print(f"w aggiornatao: {w_tot}")
     #print(f"Dimensioni w_tot: {w_tot.shape[0]}")
     # Calcola il gradiente e la loss totali con z_total aggiornato
-    z_total = X @ w_tot
-    grad_tot = compute_grad(X, y, w_tot, z_total, 0, 0, lambda_reg)
-    grad_norm_tot = np.linalg.norm(grad_tot)
-    loss_tot = compute_loss(X, y, w_tot, z_total, 0, 0, lambda_reg)
+   
 
-    return loss_tot, grad_tot, grad_norm_tot, w_block,iter_num
+    return w_block,iter_num

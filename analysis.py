@@ -26,6 +26,7 @@ def calcola_valore_migliore(df, colonna_esecuzione, colonna_valore, colonna_risu
     Ritorna:
     - Il DataFrame con le righe che hanno valori migliori non-null
     """
+    df[colonna_valore] = df[colonna_valore].astype(str).str.replace(r'[^\d\.]+', '', regex=True)
     # Filtra solo le colonne rilevanti
     df_filtrato = df[[colonna_esecuzione, colonna_valore]]
     

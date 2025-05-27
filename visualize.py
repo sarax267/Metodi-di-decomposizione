@@ -3,6 +3,45 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
+import matplotlib.pyplot as plt
+import os
+
+def plot_losses_overlay(loss_histories, method_names, save_path):
+    """
+    Crea un grafico unico con le loss sovrapposte per più metodi, ognuno con un colore specifico.
+
+    Parameters:
+    - loss_histories: lista di array o liste contenenti le loss di ciascun metodo
+    - method_names: lista dei nomi dei metodi corrispondenti
+    - save_path: percorso dove salvare l'immagine risultante
+    """
+
+    plt.figure(figsize=(10, 6))
+
+    # Mappa colore per metodo (modificabile a piacere)
+    color_map = {
+        "Gauss-Seidel": "blue",
+        "Jacobi": "green",
+        "Gradient Descent": "red",
+        "Gradient Descent Armijo": "purple"
+    }
+
+    for loss, name in zip(loss_histories, method_names):
+        color = color_map.get(name, None)  # usa colore se definito, altrimenti default
+        plt.plot(loss, label=name, color=color)
+
+    plt.xlabel("Epoche / Iterazioni")
+    plt.ylabel("Loss")
+    plt.title("Confronto delle Loss tra i Metodi")
+    plt.legend(title="Metodo", loc="best")
+    plt.grid(True)
+
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    plt.tight_layout()
+    plt.savefig(save_path)
+    plt.close()
+    return save_path
+
 # Funzione per visualizzare e salvare le loss e i gradienti
 def plot_loss_and_gradient(loss_history,loss_history_block, gradient_history, gradient_norm_slope,gradient_slope, method_name, save_dir):
     # Creare la cartella se non esiste

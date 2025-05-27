@@ -74,13 +74,13 @@ def estrai_dati(name_dataset,dataset):
     if(name_dataset=="Adult"):
     
                 # Converte il Bunch in un DataFrame
-        data = dataset.frame.copy()  # solo se fetch_openml(..., as_frame=True)
+        data = dataset.copy()  # solo se fetch_openml(..., as_frame=True)
 
         # Estrai e trasforma il target
-        y = data["class"].apply(lambda val: -1 if val == "<=50K" else 1).astype(int).to_numpy()
+        y = data["income"].apply(lambda val: -1 if val == "<=50K" else 1).astype(int).to_numpy()
 
         # Rimuove la colonna target per ottenere solo le feature
-        X = data.drop(columns="class")
+        X = data.drop(columns="income")
 
         # One-hot encoding delle variabili categoriche
         X = pd.get_dummies(X)

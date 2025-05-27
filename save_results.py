@@ -116,8 +116,10 @@ def save_results_to_excel(results_df, file_excel,foglio):
 
     # Gestione numero esecuzione
     if not dati_esistenti.empty:
-        nuovo_numero_esecuzione = dati_esistenti["Esecuzione"].max() or 0
-        if (len(dati_esistenti) % 4 == 0) :
+        nuovo_numero_esecuzione = dati_esistenti["Esecuzione"].max() 
+        if pd.isna(nuovo_numero_esecuzione):
+            nuovo_numero_esecuzione = 0
+        if (len(dati_esistenti) % 5 == 0) :
             nuovo_numero_esecuzione += 1
     else:
         nuovo_numero_esecuzione = 1

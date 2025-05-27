@@ -11,6 +11,7 @@ from adatta_dati import estrai_dati
 from sklearn.datasets import load_breast_cancer, load_diabetes, load_digits, load_iris, load_wine, fetch_20newsgroups, fetch_openml
 from save_results import save_results_to_excel
 from esegui_metodo import Metodi
+from visualize import plot_losses_overlay
 
 if __name__ == "__main__":
     # Apri (o crea) un file in modalità scrittura
@@ -61,7 +62,14 @@ if __name__ == "__main__":
         '''Dataset 7: Adult'''
         name_dataset_7="Adult" # persone in america che guadagnano > o < 50k
         # Caricamento e preprocessing
-        adult=fetch_openml(data_id=1590,  as_frame=True)
+        #adult = fetch_openml(name='adult', version=2, as_frame=True)
+        column_names = [  # inserisci qui i nomi corretti se vuoi
+            'age', 'workclass', 'fnlwgt', 'education', 'education-num', 'marital-status',
+            'occupation', 'relationship', 'race', 'sex', 'capital-gain', 'capital-loss',
+            'hours-per-week', 'native-country', 'income'
+        ]
+
+        adult = pd.read_csv('adult/adult.data', names=column_names, na_values=' ?', skipinitialspace=True)
         X_adult,y_adult,Campioni_adult,Caratteristiche_adult,data_adult= estrai_dati(name_dataset_7,adult)
 
         
@@ -113,7 +121,7 @@ if __name__ == "__main__":
             (name_dataset_7, X_adult, y_adult, Caratteristiche_adult, Campioni_adult)
         ]
         
-        
+        losses=[]
         # Itera su messaggi e dataset insieme
         for messaggio, (name, X, y, caratteristiche, campioni) in tqdm(zip(messaggi, datasets), 
                                                                     total=len(messaggi),
@@ -130,11 +138,17 @@ if __name__ == "__main__":
                 #print(f"\nEsecuzione metodo {method} con {joblib_num_jobs} CPU:", file=f)
             
                 '''Eseguo i metodi SOLO per il dataset corrente'''
-                risultato = Metodi(name, method, joblib_num_jobs, X, y, caratteristiche, campioni, file_excel)
-                
+                risultato,loss = Metodi(name, method, joblib_num_jobs, X, y, caratteristiche, campioni, file_excel)
+                losses.append(loss)
                 # Aggiungi solo il risultato corrente al dataframe finale
                 df_finale = pd.concat([df_finale, risultato], ignore_index=True)
 
+            path_loss_overlay=plot_losses_overlay(losses, args.method, save_path=f"plots_{name}/loss_overlay.png")
+            # Crea un dizionario con la stessa struttura del tuo DataFrame
+            row_overlay = {col: "" for col in df_finale.columns}  # inizializza tutto vuoto
+            row_overlay["Plot"] = path_loss_overlay
+            row_overlay["Loss Finale"] = "Loss overlay"
+            df_finale = pd.concat([df_finale, pd.DataFrame([row_overlay])], ignore_index=True)
 
         #print(df_finale)
         # Creazione di una barra di avanzamento personalizzata per il salvataggio
