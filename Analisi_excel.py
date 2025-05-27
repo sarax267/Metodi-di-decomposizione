@@ -1,5 +1,5 @@
 from tqdm import tqdm
-from analysis_prova import Analisi
+from analysis import Analisi
 from save_results import save_results_to_excel
 import pandas as pd
 file_excel = "risultati.xlsx"
