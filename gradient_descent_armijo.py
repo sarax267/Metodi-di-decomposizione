@@ -8,7 +8,7 @@ import time
 
 # Classe per Gradient Descent Armijo
 class GradientDescentArmijo:
-    def __init__(self, lambda_reg, epochs, armijo_params=None):
+    def __init__(self, lambda_reg, epochs,tol, armijo_params=None):
         """
         Inizializza il modello con regolarizzazione L2 e ricerca di Armijo.
         """
@@ -16,6 +16,7 @@ class GradientDescentArmijo:
         self.epochs = epochs
         self.w = None
         self.execution_time=0
+        self.tol=tol
 
         # Creazione dell'oggetto ArmijoLineSearch con parametri personalizzabili
         self.armijo = ArmijoLineSearch(**(armijo_params or {}))
@@ -28,6 +29,7 @@ class GradientDescentArmijo:
         loss_history = []
         gradient_history = []
         gradient_norm_history = []
+        Time=[]
         self.w = np.zeros(X.shape[1])  # Inizializza i pesi qui
         start_time = time.perf_counter() # Misura il tempo
 
@@ -46,15 +48,19 @@ class GradientDescentArmijo:
 
             #Memorizzo Loss e Gradient
             loss_history.append(loss)
-            gradient_norm_history.append(np.linalg.norm(grad))
+            grad_norm=np.linalg.norm(grad)
+            gradient_norm_history.append(grad_norm)
             gradient_history.append(grad.copy())  # Salva il vettore completo del gradiente
-            #if epoch % 50 == 0:
-                #print(f"  -> Epoca {epoch}/{self.epochs}\n    - Loss: {loss:.3f}\n    - Gradiente: {grad}")
+            end_time_epoch=time.perf_counter()
+            Time.append(end_time_epoch - start_time) #calcolo il tempo di esecuzione per ogni epoca
+            if grad_norm<= self.tol:
+                break
 
         end_time = time.perf_counter()  # Fine del timer
         self.execution_time=end_time - start_time
+        
         #print(f"\n -> Gradient Descent Armijo Tempo: {self.execution_time} secondi")
-        return loss_history,gradient_norm_history, gradient_history, self.w  # Restituisce le loss, i gradienti e i pesi finali
+        return loss_history,gradient_norm_history, gradient_history, self.w, epoch, Time # Restituisce le loss, i gradienti e i pesi finali
 
     def fit(self, X, y):
         """

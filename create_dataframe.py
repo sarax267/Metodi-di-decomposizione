@@ -22,7 +22,7 @@ def create_results_dataframe(Cpu, name_dataset, Caratteristiche, Campioni, metod
     """
     colonne_complete = [
         "Esecuzione","Dataset", "Metodo", "Epoche/Iterazioni",
-        "Tempo di Esecuzione (s)", "Loss Finale", 
+        "Tempo di Esecuzione totale (s)", "Loss Finale", 
         "Gradiente Finale", "Plot", "Commenti", 
         "Numero caratteristiche", "Numero Campioni X", "CPU usate", "Numero sottoblocchi"
     ]

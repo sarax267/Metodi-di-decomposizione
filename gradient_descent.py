@@ -10,12 +10,13 @@ Per organizzare il codice, possiamo creare una classe
 LogisticRegressionL2, che carica i dati, calcola la loss e il gradiente.
 '''
 class GradientDescent:
-    def __init__(self, lambda_reg, lr, epochs):
+    def __init__(self, lambda_reg, lr, epochs,tol):
         self.lambda_reg =lambda_reg # Regolarizzazione L2
         self.lr = lr  # Tasso di apprendimento
         self.epochs = epochs  # Numero di epoche
         self.w = None #Pesi del modello
         self.execution_time = 0
+        self.tol=tol
 
     def fit(self, X, y):
         n_features = X.shape[1] #mi da il numero delle colonne, cioè delle features 
@@ -29,6 +30,7 @@ class GradientDescent:
         loss_history = []
         gradient_history = []
         gradient_norm_history = []
+        Time=[]
         start_time = time.perf_counter() # Misura il tempo
 
         for epoch in range(self.epochs):  # Usa direttamente l'attributo 'epochs'
@@ -36,17 +38,22 @@ class GradientDescent:
             self.w -= self.lr * grad  # Aggiornamento dei pesi
             loss = self.compute_loss(X, y)
             loss_history.append(loss)
-            gradient_norm_history.append(np.linalg.norm(grad)) #salva le norme dei vettori del gradiente
+            grad_norm=np.linalg.norm(grad)
+            gradient_norm_history.append(grad_norm) #salva le norme dei vettori del gradiente
             gradient_history.append(grad.copy())  # Salva il vettore completo del gradiente
-
+            end_time_epoch=time.perf_counter()
+            Time.append(end_time_epoch - start_time) #calcolo il tempo di esecuzione per ogni epoca
             #if epoch % 50 == 0:
                 #print(f"  -> Epoca {epoch}/{self.epochs}\n    - Loss: {loss:.3f}\n    - Gradiente: {grad}")
+            if grad_norm <= self.tol:
+                break
         
-        end_time = time.perf_counter()  # Fine del timer
-        self.execution_time=end_time - start_time
+        end_time = time.perf_counter()  # Fine del timer 
+        self.execution_time=end_time - start_time #Calcolo il tempo di esecuzione totale del metodo
+        
         #print(f"\n  -> Gradient Descent tempo esecuzione: {self.execution_time} secondi")
        
-        return loss_history, gradient_norm_history, gradient_history, self.w  # Restituisce le loss, i gradienti e i pesi finali
+        return loss_history, gradient_norm_history, gradient_history, self.w, epoch,Time  # Restituisce le loss, i gradienti e i pesi finali
 
 
     def predict(self, X):

@@ -31,7 +31,7 @@ class GaussSeidel:
         gradient_history_block = []
         gradient_norm_history_block=[]
         w_history=[]
-        
+        Time=[]
         iter_count=0 #Voglio contare il numero di iterazioni che il metodo impiega prima di fermarsi per il criterio di arresto
         tot_iter_count=0
 
@@ -53,6 +53,7 @@ class GaussSeidel:
         loss_history.append(initial_loss)
         gradient_history.append(initial_grad)
         gradient_norm_history.append(initial_grad_norm)
+        Time.append(0)
 
         
         for epoch in range(self.max_iter): #Ciclo esterno
@@ -101,24 +102,18 @@ class GaussSeidel:
             gradient_history.append(grad_iter)
             gradient_norm_history.append(grad_iter_norm)
 
-            #Se  non converge, l'itera epoca non converge
-            if grad_iter_norm<self.tol:
-                break
-            
-            
             # Controllo della loss (chiusura)
             if np.isnan(loss_iter) or np.isinf(loss_iter):
                 raise ValueError("Errore: La loss è divergente. L'insieme di livello potrebbe non essere chiuso.")
+
+            end_time_iter=time.perf_counter()
+            Time.append(end_time_iter - start_time) #calcolo il tempo di esecuzione per ogni epoca
+            
+            #Se  non converge, l'itera epoca non converge
+            if grad_iter_norm<self.tol:
+                break
         
-        #print(f"Pesi blocchi: {w_history}")
-        #print(f"Loss:{loss_history}")
-        #print(f"Grad:{gradient_history_block}")
-        #print(f"Grad_len:{len(gradient_history_block)}")
-        #print(f"Grad_len_componenti:")
-        
-        #print(f"len_Grad_norm:{len(gradient_norm_history)}")
-        #print(f"iter_history:{iter_history}")
         end_time = time.perf_counter() # Fine del timer
         self.execution_time=end_time - start_time
-        #print(tot_iter_count)
-        return loss_history,loss_history_block,gradient_norm_history, gradient_history, epoch # Restituisce le loss, i gradienti e i pesi finali
+        
+        return loss_history,loss_history_block,gradient_norm_history, gradient_history, epoch, Time 

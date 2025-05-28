@@ -11,7 +11,7 @@ from adatta_dati import estrai_dati
 from sklearn.datasets import load_breast_cancer, load_diabetes, load_digits, load_iris, load_wine, fetch_20newsgroups, fetch_openml
 from save_results import save_results_to_excel
 from esegui_metodo import Metodi
-from visualize import plot_losses_overlay
+from visualize import plot_losses_iter_overlay, plot_losses_time_overlay
 
 if __name__ == "__main__":
     # Apri (o crea) un file in modalità scrittura
@@ -122,6 +122,7 @@ if __name__ == "__main__":
         ]
         
         losses=[]
+        Time_losses=[]
         # Itera su messaggi e dataset insieme
         for messaggio, (name, X, y, caratteristiche, campioni) in tqdm(zip(messaggi, datasets), 
                                                                     total=len(messaggi),
@@ -138,17 +139,24 @@ if __name__ == "__main__":
                 #print(f"\nEsecuzione metodo {method} con {joblib_num_jobs} CPU:", file=f)
             
                 '''Eseguo i metodi SOLO per il dataset corrente'''
-                risultato,loss = Metodi(name, method, joblib_num_jobs, X, y, caratteristiche, campioni, file_excel)
+                risultato,loss,Time = Metodi(name, method, joblib_num_jobs, X, y, caratteristiche, campioni, file_excel)
                 losses.append(loss)
+                Time_losses.append(Time)
                 # Aggiungi solo il risultato corrente al dataframe finale
                 df_finale = pd.concat([df_finale, risultato], ignore_index=True)
 
-            path_loss_overlay=plot_losses_overlay(losses, args.method, save_path=f"plots_{name}/loss_overlay.png")
-            # Crea un dizionario con la stessa struttura del tuo DataFrame
-            row_overlay = {col: "" for col in df_finale.columns}  # inizializza tutto vuoto
-            row_overlay["Plot"] = path_loss_overlay
-            row_overlay["Loss Finale"] = "Loss overlay"
-            df_finale = pd.concat([df_finale, pd.DataFrame([row_overlay])], ignore_index=True)
+            path_loss_iter_overlay=plot_losses_iter_overlay(losses, args.method, save_path=f"plots_{name}/loss__iter_overlay.png")
+            path_loss_time_overlay=plot_losses_time_overlay(losses, Time_losses,args.method, save_path=f"plots_{name}/loss__time_overlay.png")
+            # Aggiungo una riga: Loss vs iterazioni
+            row_overlay_iter = {col: "" for col in df_finale.columns}  # inizializza tutto vuoto
+            row_overlay_iter["Plot"] = path_loss_iter_overlay
+            row_overlay_iter["Loss Finale"] = "Loss vs iter overlay"
+            df_finale = pd.concat([df_finale, pd.DataFrame([row_overlay_iter])], ignore_index=True)
+            # Seconda riga: Loss vs Tempo overlay
+            row_overlay_time = {col: "" for col in df_finale.columns}
+            row_overlay_time["Plot"] = path_loss_time_overlay
+            row_overlay_time["Loss Finale"] = "Loss vs time overlay"
+            df_finale = pd.concat([df_finale, pd.DataFrame([row_overlay_time])], ignore_index=True)
 
         #print(df_finale)
         # Creazione di una barra di avanzamento personalizzata per il salvataggio
